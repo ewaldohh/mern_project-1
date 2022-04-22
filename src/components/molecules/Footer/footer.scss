@@ -4,9 +4,10 @@
     align-items: center;
     background-color: #2473a4;
     padding: 20px 40px;
+    height: 75px;
     .logo {
-        width: 150px;
-        height: 150px;
+        width: 75px;
+        height: 75px;
         object-fit: contain;
     }
     .social-wrapper {
@@ -22,5 +23,16 @@
                 object-fit: contain;
             }
         }
+    }
+}
+
+.copyright {
+    background-color: #1d5c83;
+    padding: 10px 10px;
+    p {
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        margin: 0px;
     }
 }

@@ -25,7 +25,9 @@ const Footer = () => {
                 <Icon img = {ICLinkedin}/>
             </div>
         </div>
-        <p>Copyright</p>
+        <div className='copyright'>
+          <p>Copyright</p>
+        </div>
     </div>
   )
 }

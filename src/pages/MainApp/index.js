@@ -4,25 +4,28 @@ import { Header, Footer } from '../../components'
 import CreateBlog from '../CreateBlog'
 import DetailBlog from '../DetailBlog'
 import Home from '../Home'
+import './mainApp.scss'
 
 const MainApp = () => {
   return (
-    <div>
-        <Header />
+    <div className='main-app-wrapper'>
+      <Header />
+        <div className='content-wrapper'>
         <Router>
-          <Switch>
-            <Route path="/create-blog">
-              <CreateBlog />
-            </Route>
-            <Route path="/detail-blog">
-              <DetailBlog />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </Router>
-        <Footer />
+            <Switch>
+              <Route path="/create-blog">
+                <CreateBlog />
+              </Route>
+              <Route path="/detail-blog">
+                <DetailBlog />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </Router>
+        </div>
+      <Footer />
     </div>
   )
 }
